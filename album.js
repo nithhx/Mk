@@ -88,37 +88,10 @@ document.addEventListener("DOMContentLoaded", () => {
     button2.style.display = 'inline-block';
   });
 
-  // Improved music toggle function
-  function toggleMusic() {
-    // First ensure we have user interaction
-    if (music.paused) {
-      // Try to play immediately
-      const playPromise = music.play();
-      
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          // Successfully started playback
-          musicToggle.textContent = "🔊"; // Speaker icon
-        })
-        .catch(error => {
-          // Show play button to indicate music needs user interaction
-          musicToggle.textContent = "▶️";
-          // Add event listener for when user clicks again
-          musicToggle.onclick = function() {
-            music.play()
-              .then(() => {
-                musicToggle.textContent = "🔊";
-                musicToggle.onclick = toggleMusic; // Reset to original handler
-              })
-              .catch(e => console.log("Playback failed:", e));
-          };
-        });
-      }
-    } else {
-      music.pause();
-      musicToggle.textContent = "🔇"; // Muted icon
-    }
-  }
+  /function playMusic() {
+      const audio = document.getElementById('bg-music');
+      audio.play();
+}
 
   // Assign the toggle function
   musicToggle.addEventListener('click', toggleMusic);
