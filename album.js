@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const musicToggle = document.getElementById("music-toggle");
   
   // Initialize music as paused
-  music.pause();
   musicToggle.textContent = "🔇"; // Muted icon
 
   // Memory data
