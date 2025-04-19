@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Comfort Zone</title>
+  <link rel="stylesheet" href="zone.css">
+</head>
+<body>
+<body>
+  <h2 id="welcomeText"></h2>
+  <p id="greetingMessage">what are you feeling right now?</p>
+ 
+  <div id="music-player">
+  <button id="prev-btn">⏮</button>
+  <button id="music-btn">Play</button>
+  <button id="next-btn">⏭</button>
+  <audio id="bg-music" loop>
+    <source src="/music/[SPOTDOWNLOADER.COM] Ikaw Lang Patutunguhan.mp3" type="audio/mpeg" />
+    <source src="/music/[SPOTDOWNLOADER.COM] Leonora.mp3" type="audio/mpeg" />
+    <source src="/music/[SPOTDOWNLOADER.COM] blue.mp3" type="audio/mpeg" />
+  </audio>
+</div>
+
+  <div class="scroll-container">
+    <div class="topic" onclick="showMessage(`It’s okay to feel sad sometimes. You are not alone.`, 'sad')"> <strong>sad</strong></div>
+    <div class="topic" onclick="showMessage(`You deserve rest. Breathe deeply, take it slow.`, 'tired')"><strong>tired</strong></div>
+    <div class="topic" onclick="showMessage(`Yay! I’m happy you're happy! Keep smiling.`, 'happy')"> <strong>happy</strong></div>
+    <div class="topic" onclick="showMessage(`You're safe here. Let’s take it one moment at a time.`, 'anxious')"> <strong>anxious</strong></div>
+    <div class="topic" onclick="showMessage(`Peace, quiet, and a little smile – this is your time.`, 'relax')"> <strong>relax</strong></div>
+    <div class="topic" onclick="showMessage(`You’re doing your best, and that’s more than enough.`, 'lost')"><strong>lost</strong></div>
+    <div class="topic" onclick="showMessage(`Let’s reflect quietly – your feelings are valid.`, 'overwhelmed')"> <strong>overwhelmed</strong></div>
+    <div class="topic" onclick="showMessage(`You matter more than you know. I’m glad you’re here.`, 'unseen')"> <strong>unseen</strong></div>
+    <div class="topic" onclick="showMessage(`Take pride in how far you’ve come.`, 'unmotivated')"><strong>unmotivated</strong></div>
+    <div class="topic" onclick="showMessage(`Let’s channel that energy into something healing.`, 'angry')"> <strong>angry</strong></div>
+    <div class="topic" onclick="showMessage(`It’s okay to not have all the answers.`, 'confused')"><strong>confused</strong></div>
+    <div class="topic" onclick="showMessage(`You bring light, even when you don’t feel it.`, 'lonely')"> <strong>lonely</strong></div>
+    <div class="topic" onclick="showMessage(`Good things take time. Keep believing.`, 'losing hope')"> <strong>losing hope</strong></div>
+    <div class="topic" onclick="showMessage(`Take this moment to breathe and be proud of yourself.`, 'numb')"><strong>numb</strong></div>
+    <div class="topic" onclick="showMessage(`You’re stronger than today’s doubts.`, 'discouraged')"> <strong>discouraged</strong></div>
+    
+  <div class="topic" onclick="showMessage(`Sometimes the silence inside can feel louder than any noise. But emptiness isn't the end—it's the beginning of something waiting to be filled. Breathe. Take your time. You're not broken. You're in a quiet space, preparing to be whole again.`, 'empty')"><strong>empty</strong></div>
+  
+  <div class="topic" onclick="showMessage(`You are not a mistake. Your presence matters more than you know. Even when people fail to see your light, it doesn’t stop it from shining. There’s a space in this world that only your heart can fill.`, 'unwanted')">unwanted</div>
+  
+  <div class="topic" onclick="showMessage(`Transitions can feel like earthquakes in the soul. But even shifting ground teaches us to grow roots deeper than before. You are adjusting, adapting, evolving—and that is strength in disguise.`, 'change')">change</div>
+  
+  <div class="topic" onclick="showMessage(`Grief is not a straight road. It bends and loops and returns when you least expect it. Let it come. Let it teach. But do not let it define you. You are allowed to laugh again, to hope again, and still hold what you’ve lost.`, 'grief')">grief</div>
+  
+  <div class="topic" onclick="showMessage(`Rejection isn’t a measure of your worth—it’s redirection. What’s meant for you will not require you to shrink, to beg, or to ache. You are enough, exactly as you are.`, 'rejected')">rejected</div>
+  
+  <div class="topic" onclick="showMessage(`Holding pain doesn’t protect you—it just weighs you down. Forgiveness isn’t saying it was okay. It’s saying: I choose peace over poison. And peace is always worth it.`, 'forgiveness')">forgiveness</div>
+  
+  <div class="topic" onclick="showMessage(`You don't need to earn the right to pause. Rest is not laziness—it's restoration. Close your eyes. Breathe in softness. Let the world turn without you for a moment.`, 'restless')">restless</div>
+  
+  <div class="topic" onclick="showMessage(`Self-doubt is loud, but it isn’t right. Remember everything you’ve survived. You are capable of more than your fear allows you to believe. Keep going—quietly, bravely.`, 'doubt')">doubt</div>
+  
+  <div class="topic" onclick="showMessage(`Sometimes we drift. From people. From routines. From ourselves. But connection is never lost—only waiting to be rebuilt. Start with a whisper: I’m still here. And that’s enough.`, 'disconnected')">disconnected</div>
+  
+  <div class="topic" onclick="showMessage(`Failure is not final. It’s a moment, not a measure. Even the tallest trees grew from seeds buried in the dirt. Try again. You’re growing every time you do.`, 'failure')">failure</div>
+  
+  <div class="topic" onclick="showMessage(`Your voice matters—even when it feels like no one is listening. Speak anyway. Not for the world, but for yourself. Truth deserves to be said—even in whispers.`, 'unheard')">unheard</div>
+  
+  <div class="topic" onclick="showMessage(`This moment is heavy, but you are not weak. Even thinking about holding on is strength. You don’t have to leap—just don’t let go yet. Tiny steps still count.`, 'hopeless')">hopeless</div>
+  
+  <div class="topic" onclick="showMessage(`Stillness isn’t failure. Sometimes, being stuck is just your soul asking for a moment to catch up. You’re not behind—you’re aligning.`, 'stuck')">stuck</div>
+  
+  <div class="topic" onclick="showMessage(`It’s okay to drop the mask. You don’t have to smile if it hurts. The real you—raw, quiet, tired—is still worthy of kindness and care. Let yourself be seen.`, 'exhausted')">exhausted</div>
+  
+  <div class="topic" onclick="showMessage(`Hope isn’t always loud. Sometimes it’s just a soft flicker in the dark. Hold on to it—it’s enough to light the way until morning.`, 'hopeful')">hopeful</div>
+  
+  <div class="topic" onclick="showMessage(`Others may seem further ahead, but your path is your own. You’re not late. You’re not lost. You’re arriving in your own time, with lessons that are yours alone.`, 'behind')">behind</div>
+  
+  <div class="topic" onclick="showMessage(`Doubt can be a door, not a wall. Let yourself ask. Let yourself explore. There’s beauty in not having all the answers—only a heart willing to seek them.`, 'questioning')">questioning</div>
+  
+  <div class="topic" onclick="showMessage(`It’s okay to grieve the version of you that once was. But growth means change, and change means you’re becoming. Honor the past. Embrace the unfolding.`, 'nostalgic')">nostalgic</div>
+  
+  <div class="topic" onclick="showMessage(`You are not unseen. The world may rush past, but your presence leaves quiet ripples. Even when unnoticed, you matter. You always have.`, 'invisible')">invisible</div>
+  
+  <div class="topic" onclick="showMessage(`Disappointment can make hope feel dangerous. But hope is not naïve—it’s brave. To believe in better days is the most tender act of courage. Let it in, gently.`, 'fearful')">fearful</div>
+</div>
+
+<div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+  <button id="countdownBtn" disabled style="
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  ">
+    Please wait...
+  </button>
+</div>
+
+<!-- Admin Button -->
+<div style="text-align: center; margin-top: 20px;">
+  <button id="adminToggle" class="admin-button">Admin Access</button>
+</div>
+
+<!-- Hidden Admin Panel -->
+<div id="adminPanel" class="admin-panel" style="display: none;">
+  <h3>Admin Panel</h3>
+  <p>Welcome, admin! You can manage settings here.</p>
+  <button onclick="resetCountdown()">Reset Countdown</button>
+  <button onclick="hideAdmin()">Hide Panel</button>
+</div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Your message will appear here.</p>
+  </div>
+</div>
+
+<!-- Welcome Modal -->
+<div id="welcomeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeWelcome">&times;</span>
+    <p id="welcomeMessage">Hi, Guest! Greetings from the dev (Zyrus)</p>
+  </div>
+</div>
+
+  <script src="zone.js"></script>
+</body>
