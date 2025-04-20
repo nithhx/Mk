@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css" />
+  <title>hehe</title>
+  <style>
+#music-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 9999;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#music-toggle:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#music-toggle:active {
+  transform: scale(0.95);
+}
+</style>
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="/music/[SPOTDOWNLOADER.COM] blue.mp3" type="audio/mpeg">
+  </audio>
+<button class="top-center-button" id="music-toggle">Click this</button>
+
+  <h1 class="title">The 👇list</h1>
+  
+  <ul id="memory-list"></ul>
+  <div id="memory-message" class="hidden"></div>
+  
+  <button id="button1">Click Me First</button>
+<button id="button2" onclick="window.location.href='button.html'">
+  Click here after you finish the list
+</button>
+  <div id="popup" class="popup-overlay">
+    <div class="popup-container">
+      <div class="popup-content">
+        <h2>intro muna</h2>
+        <div class="scroll-content" id="scrollableContent">
+          <p>Please read this entire message carefully before proceeding.</p>
+          <p>Hi, Maykie!
+It’s me, Zyrus.</p>
+          <p>I know this might be a little unexpected, but don’t worry—this won’t take long.</p>
+          <p>I made this little website just for you.</p>
+          <p>This is just my way of saying something I’ve been meaning to say properly.</p>
+          <p>Remember the first message I sent you? That was rushed—I was nervous, and honestly, I felt like I could’ve said so much more, and it was my friend that sent the message I made since i was so nervous lol.</p>
+          <p>So here it is.</p>
+          <p>Just give me a few minutes of your time, and I hope this makes you smile, even just a little.</p>
+          <p>Thank you!!</p>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button id="continueBtn" class="continue-btn">Continue</button>
+      </div>
+    </div>
+  </div>
+
+<script src="album.js" ></script >
+</body>
+</html>
