@@ -66,9 +66,9 @@ const bgMusic = document.getElementById('bg-music');
 let isPlaying = false;
 
 const playlist = [
-  '/music/[SPOTDOWNLOADER.COM] blue.mp3',
-  '/music/[SPOTDOWNLOADER.COM] Ikaw Lang Patutunguhan.mp3',
-  '/music/[SPOTDOWNLOADER.COM] Leonora.mp3'
+  'music/[SPOTDOWNLOADER.COM] blue.mp3',
+  'music/[SPOTDOWNLOADER.COM] Ikaw Lang Patutunguhan.mp3',
+  '/music/Leonora.mp3'
 ];
 
 let currentTrack = 0;
